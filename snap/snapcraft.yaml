@@ -63,10 +63,6 @@ parts:
     source-type: git
     source-tag: 0.14.9
     plugin: rust
-    override-pull: |
-      craftctl default
-      craftctl set version="$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
-
     build-packages:
       - rustc
       - cargo
