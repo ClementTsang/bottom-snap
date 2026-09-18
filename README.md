@@ -4,7 +4,7 @@
 
 A snap for [bottom](https://github.com/ClementTsang/bottom).
 
-Original snap repo created by [kz6fittycent](https://github.com/kz6fittycent/bottom), this is a fork that I'm managing now as the maintainer of bottom.
+Shoutout to the original snap repo created by [kz6fittycent](https://github.com/kz6fittycent/bottom); this is a fork that I'm managing now as the maintainer of bottom.
 
 ## Install the snap:
 
