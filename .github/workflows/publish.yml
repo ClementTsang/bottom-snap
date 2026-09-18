@@ -22,10 +22,10 @@ jobs:
           fetch-depth: 1
           persist-credentials: false
 
-      - uses: canonical/action-build@3bdaa03e1ba6bf59a65f84a751d943d549a54e79 # v1.3.0
+      - uses: ClementTsang/action-build@a9eaaaf04e8b0ab0bdb6a2f924206987e3ff4833
         id: build
 
-      - uses: canonical/action-publish@214b86e5ca036ead1668c79afb81e550e6c54d40 # v1.2.0
+      - uses: ClementTsang/action-publish@d568998a48cc6f18958ac2b08f7528ea1de568fa
         env:
           SNAPCRAFT_STORE_CREDENTIALS: ${{ secrets.STORE_LOGIN }}
         with:
