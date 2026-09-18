@@ -1,4 +1,4 @@
-name: Snap Builds
+name: Test snap builds
 
 on:
   push:

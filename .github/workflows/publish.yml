@@ -1,4 +1,4 @@
-name: publish
+name: Publish snap
 on:
   workflow_dispatch:
 
