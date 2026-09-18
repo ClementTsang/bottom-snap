@@ -4,7 +4,7 @@ summary: A graphical process/system monitor with a customizable interface
 description: |
   A cross-platform graphical process/system monitor with a customizable interface and a multitude of features. 
   Supports Linux, macOS, and Windows. Inspired by both gtop and gotop.
-  
+
   After installation, run the following commands so the program will run as intended:
 
     - sudo snap connect bottom:mount-observe
@@ -15,9 +15,9 @@ description: |
 
     - sudo snap connect bottom:process-control
 
-  
+
   Check out the developer's site for more usage hints: https://github.com/ClementTsang/bottom#usage
-  
+
 license: MIT
 
 base: core24
@@ -45,7 +45,7 @@ platforms:
     build-on: [s390x]
     build-for: [s390x]
 
-apps: 
+apps:
   bottom:
     command: bin/btm
     plugs:
@@ -55,7 +55,7 @@ apps:
       - system-observe
       - hardware-observe
       - network
-      
+
 parts:
   bottom:
     source: https://github.com/ClementTsang/bottom
@@ -64,8 +64,8 @@ parts:
     plugin: rust
     override-pull: |
       craftctl default
-      craftctl set version="$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)" 
-      
+      craftctl set version="$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
+
     build-packages:
       - rustc
       - cargo
