@@ -1,6 +1,11 @@
 name: Publish snap
 on:
   workflow_dispatch:
+    inputs:
+      release:
+        description: "Release channel"
+        required: true
+        default: "stable"
 
 jobs:
   publish:
@@ -21,4 +26,4 @@ jobs:
           SNAPCRAFT_STORE_CREDENTIALS: ${{ secrets.STORE_LOGIN }}
         with:
           snap: ${{ steps.build.outputs.snap }}
-          release: stable
+          release: ${{ github.event.inputs.release }}

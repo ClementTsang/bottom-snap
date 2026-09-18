@@ -1,6 +1,6 @@
 name: bottom
 adopt-info: bottom
-summary: Yet another cross-platform graphical process/system monitor
+summary: Bottom - yet another cross-platform graphical process/system monitor
 description: |
   A customizable cross-platform graphical process/system monitor for the terminal.
   Supports Linux, macOS, and Windows. Inspired by gtop, gotop, and htop. 
