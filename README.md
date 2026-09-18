@@ -13,8 +13,8 @@ Shoutout to the original snap repo created by [kz6fittycent](https://github.com/
 **After installation, run the following commands so the program will run as intended:**
 
 ```shell
-- sudo snap connect bottom:mount-observe
-- sudo snap connect bottom:hardware-observe
-- sudo snap connect bottom:system-observe
-- sudo snap connect bottom:process-control
+sudo snap connect bottom:mount-observe
+sudo snap connect bottom:hardware-observe
+sudo snap connect bottom:system-observe
+sudo snap connect bottom:process-control
 ```
