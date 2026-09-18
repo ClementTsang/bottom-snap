@@ -25,9 +25,9 @@ base: core24
 grade: stable
 confinement: strict
 compression: lzo
-issues: https://github.com/kz6fittycent/bottom/issues
+issues: https://github.com/ClementTsang/bottom-snap/issues
 source-code: https://github.com/ClementTsang/bottom
-contact: https://github.com/kz6fittycent/bottom
+contact: https://github.com/ClementTsang/bottom-snap
 
 platforms:
   amd64:
