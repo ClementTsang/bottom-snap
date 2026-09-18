@@ -6,6 +6,10 @@ on:
         description: "Release channel"
         required: true
         default: "stable"
+        type: choice
+        options:
+          - stable
+          - edge
 
 jobs:
   publish:
