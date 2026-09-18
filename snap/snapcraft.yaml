@@ -1,9 +1,9 @@
 name: bottom
 adopt-info: bottom
-summary: A graphical process/system monitor with a customizable interface
+summary: Yet another cross-platform graphical process/system monitor
 description: |
-  A cross-platform graphical process/system monitor with a customizable interface and a multitude of features. 
-  Supports Linux, macOS, and Windows. Inspired by both gtop and gotop.
+  A customizable cross-platform graphical process/system monitor for the terminal.
+  Supports Linux, macOS, and Windows. Inspired by gtop, gotop, and htop. 
 
   After installation, run the following commands so the program will run as intended:
 
@@ -16,7 +16,8 @@ description: |
     - sudo snap connect bottom:process-control
 
 
-  Check out the developer's site for more usage hints: https://github.com/ClementTsang/bottom#usage
+  For more info, check out the program repo (https://github.com/ClementTsang/bottom)
+  or the documentation (https://bottom.pages.dev/stable/).
 
 license: MIT
 
