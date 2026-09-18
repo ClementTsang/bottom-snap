@@ -69,5 +69,3 @@ parts:
     build-packages:
       - rustc
       - cargo
-      - python3-toml
-      - tzdata
