@@ -7,14 +7,12 @@ description: |
 
   After installation, run the following commands so the program will run as intended:
 
-    - sudo snap connect bottom:mount-observe
-
-    - sudo snap connect bottom:hardware-observe
-
-    - sudo snap connect bottom:system-observe
-
-    - sudo snap connect bottom:process-control
-
+  ```bash
+  sudo snap connect bottom:mount-observe
+  sudo snap connect bottom:hardware-observe
+  sudo snap connect bottom:system-observe
+  sudo snap connect bottom:process-control
+  ```
 
   For more info, check out the program repo (https://github.com/ClementTsang/bottom)
   or the documentation (https://bottom.pages.dev/stable/).
@@ -25,6 +23,7 @@ base: core24
 grade: stable
 confinement: strict
 compression: lzo
+website: https://bottom.pages.dev/stable/
 issues: https://github.com/ClementTsang/bottom-snap/issues
 source-code: https://github.com/ClementTsang/bottom
 contact: https://github.com/ClementTsang/bottom-snap
