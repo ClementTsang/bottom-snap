@@ -3,7 +3,7 @@ version: "0.14.9"
 summary: Bottom - yet another cross-platform graphical process/system monitor
 description: |
   A customizable cross-platform graphical process/system monitor for the terminal.
-  Supports Linux, macOS, and Windows. Inspired by gtop, gotop, and htop. 
+  Supports Linux, macOS, and Windows, and inspired by gtop, gotop, and htop.
 
   After installation, run the following commands so the program will run as intended:
 
