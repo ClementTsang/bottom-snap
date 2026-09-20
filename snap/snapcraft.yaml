@@ -52,6 +52,7 @@ platforms:
 apps:
   bottom:
     command: bin/btm
+    completer: share/bash-completion/completions/bottom
     plugs:
       - mount-observe
       - network-control
@@ -66,3 +67,17 @@ parts:
     source-type: git
     source-tag: 0.14.9
     plugin: rust
+    build-environment:
+      - BTM_GENERATE: "true"
+      - COMPLETION_DIR: $CRAFT_PART_BUILD/completion
+      - MANPAGE_DIR: $CRAFT_PART_BUILD/manpage
+    override-build: |
+      craftctl default
+
+      # clap generates the completion bound to "btm", but the snap exposes the
+      # command as "bottom", so register both names.
+      mkdir -p "$CRAFT_PART_INSTALL/share/bash-completion/completions"
+      sed 's/ btm$/ btm bottom/' "$COMPLETION_DIR/btm.bash" \
+        > "$CRAFT_PART_INSTALL/share/bash-completion/completions/bottom"
+
+      install -Dm644 "$MANPAGE_DIR/btm.1" "$CRAFT_PART_INSTALL/share/man/man1/btm.1"
