@@ -2,42 +2,14 @@ name: Publish to stable
 
 on:
   workflow_dispatch:
-    inputs:
-      version:
-        description: "Version that must be on edge before promoting"
-        required: true
-        type: string
 
 jobs:
   promote:
     runs-on: ubuntu-24.04
     environment: production
-    timeout-minutes: 150
+    timeout-minutes: 60
 
     steps:
-      - name: Wait for edge to report ${{ inputs.version }}
-        env:
-          VERSION: ${{ inputs.version }}
-        run: |
-          for _ in $(seq 1 120); do
-            MAP=$(curl -sfH 'Snap-Device-Series: 16' https://api.snapcraft.io/v2/snaps/info/bottom)
-            echo "$MAP" | jq -r '.["channel-map"][] | select(.channel.risk == "edge") | "  \(.channel.architecture) \(.version) rev=\(.revision)"'
-
-            if echo "$MAP" | jq -e --arg v "$VERSION" '
-              [.["channel-map"][] | select(.channel.risk == "edge")] as $edge
-              | ($edge | length) > 0 and all($edge[]; .version == $v)
-            ' > /dev/null; then
-              echo "edge is fully at $VERSION"
-              exit 0
-            fi
-
-            echo "waiting for edge to reach $VERSION"
-            sleep 60
-          done
-
-          echo "timed out waiting for edge to reach $VERSION"
-          exit 1
-
       - name: Install snapcraft
         run: sudo snap install snapcraft --classic
 
