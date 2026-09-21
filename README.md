@@ -1,6 +1,6 @@
 # bottom
 
-[![bottom](https://snapcraft.io//bottom/badge.svg)](https://snapcraft.io/bottom) [![🧪 Snap Builds](https://github.com/kz6fittycent/bottom/workflows/%F0%9F%A7%AA%20Snap%20Builds/badge.svg)](https://github.com/kz6fittycent/bottom/actions?query=workflow:"🧪+Snap+Builds")
+[![bottom](https://snapcraft.io//bottom/badge.svg)](https://snapcraft.io/bottom)
 
 A snap for [bottom](https://github.com/ClementTsang/bottom).
 
