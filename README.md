@@ -21,4 +21,4 @@ sudo snap connect bottom:process-control
 
 ## Updating
 
-To deploy a build, use go to <https://snapcraft.io/bottom/builds> and trigger a build.
+To deploy a build, use go to <https://snapcraft.io/bottom/builds> and trigger a build, then run the publish action after it's done to promote it to stable.
