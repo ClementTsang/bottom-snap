@@ -15,6 +15,8 @@ description: |
 
   `sudo snap connect bottom:process-control`
 
+  Note that this snap is also aliased to `btm`.
+
   For more info, check out the program repo (https://github.com/ClementTsang/bottom)
   or the documentation (https://bottom.pages.dev/stable/).
 
