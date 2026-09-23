@@ -19,6 +19,8 @@ sudo snap connect bottom:system-observe
 sudo snap connect bottom:process-control
 ```
 
+Note that the snap also has an alias for `btm`.
+
 ## Updating
 
 To deploy a build, use go to <https://snapcraft.io/bottom/builds> and trigger a build, then run the publish action after it's done to promote it to stable.
