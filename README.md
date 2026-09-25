@@ -19,7 +19,7 @@ sudo snap connect bottom:system-observe
 sudo snap connect bottom:process-control
 ```
 
-Note that the snap also has an alias for `btm`.
+Note that the snap also has an alias for `btm`, so the normal usage docs should still apply.
 
 ## Updating
 
