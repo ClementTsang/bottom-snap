@@ -4,7 +4,9 @@
 
 A snap for [bottom](https://github.com/ClementTsang/bottom).
 
-Shoutout to the original snap repo created by [kz6fittycent](https://github.com/kz6fittycent/bottom); this is a fork that I'm managing now as the maintainer of bottom.
+This is a fork of the original snap repo created by [kz6fittycent](https://github.com/kz6fittycent/bottom)
+(huge thanks to them for creating it in the first place); this is now the definitive source of truth for the snap,
+which I am maintaining as the main dev for bottom.
 
 ## Installation
 
@@ -23,4 +25,5 @@ Note that the snap also has an alias for `btm`, so the normal usage docs should 
 
 ## Updating
 
-To deploy a build, use go to <https://snapcraft.io/bottom/builds> and trigger a build, then run the publish action after it's done to promote it to stable.
+To deploy a build, use go to <https://snapcraft.io/bottom/builds> and trigger a build, then run the publish
+action after it's done to promote it to stable.
