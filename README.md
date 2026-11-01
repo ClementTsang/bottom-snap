@@ -25,5 +25,5 @@ Note that the snap also has an alias for `btm`, so the normal usage docs should 
 
 ## Updating
 
-To deploy a build, use go to <https://snapcraft.io/bottom/builds> and trigger a build, then run the publish
+To deploy a build, update the snap craft file and then run the publish
 action after it's done to promote it to stable.
