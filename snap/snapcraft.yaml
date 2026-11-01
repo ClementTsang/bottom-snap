@@ -1,5 +1,5 @@
 name: bottom
-version: "0.14.9"
+version: "0.15.0"
 summary: Bottom - yet another cross-platform graphical process/system monitor
 description: |
   A customizable cross-platform graphical process/system monitor for the terminal.
@@ -67,7 +67,7 @@ parts:
   bottom:
     source: https://github.com/ClementTsang/bottom
     source-type: git
-    source-tag: 0.14.9
+    source-tag: 0.15.0
     plugin: rust
     build-environment:
       - BTM_GENERATE: "true"
