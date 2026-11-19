@@ -6,7 +6,7 @@ A snap for [bottom](https://github.com/ClementTsang/bottom).
 
 This is a fork of the original snap repo created by [kz6fittycent](https://github.com/kz6fittycent/bottom)
 (huge thanks to them for creating it in the first place); this is now the definitive source of truth for the snap,
-which I am maintaining as the main dev for bottom.
+which I am now maintaining as the main developer of bottom.
 
 ## Installation
 
